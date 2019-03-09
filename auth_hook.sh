@@ -15,7 +15,7 @@ go run cmd/main.go "${CERTBOT_DOMAIN}" ${CERTBOT_VALIDATION} "goDaddy"
 
 if [ "${CERTBOT_DOMAIN}" = "yashagarwal.in" ]; then
     # echo "Waiting for GoDaddy to publish the DNS records"
-    for (( i=0; i<5; i++ )); do
+    for (( i=0; i<15; i++ )); do
         # echo "Minute" ${i}
         sleep 60s
     done

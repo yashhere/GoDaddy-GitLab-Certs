@@ -52,7 +52,7 @@ if [ "${CERTBOT_DOMAIN}"  =  "readings.yashagarwal.in" ];  then
 fi
 ```
 
-Domain registrars require some time to publish the changes in the DNS records. Here I have assumed 5 minutes in case of GoDaddy, and it works fine for me. Change the time limit according to your experience.
+Domain registrars require some time to publish the changes in the DNS records. Here I have assumed 15 minutes in case of GoDaddy, and it works fine for me. Change the time limit according to your experience.
 
 Also update the `key_dir` vairable in the `certbot.sh` file to include your last domain name as explained above. So in the above case, key_dir variable will be -
 
