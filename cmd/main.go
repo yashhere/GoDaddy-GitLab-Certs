@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	gd "github.com/yashhere/godaddyDNS/pkg/godaddy"
+	gd "github.com/yashhere/GoDaddy-GitLab-Certs/pkg/godaddy"
 )
 
 func main() {
