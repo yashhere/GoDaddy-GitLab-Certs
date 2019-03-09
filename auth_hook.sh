@@ -13,9 +13,11 @@ cd ${DIR}
 echo "Updating DNS records for ${CERTBOT_DOMAIN}"
 go run cmd/main.go "${CERTBOT_DOMAIN}" ${CERTBOT_VALIDATION} "goDaddy"
 
+echo ${CERTBOT_VALIDATION}
+echo
 if [ "${CERTBOT_DOMAIN}" = "yashagarwal.in" ]; then
     # echo "Waiting for GoDaddy to publish the DNS records"
-    for (( i=0; i<15; i++ )); do
+    for (( i=0; i<9; i++ )); do
         # echo "Minute" ${i}
         sleep 60s
     done

@@ -2,6 +2,9 @@
 
 A set of scripts to update the HTTPS certificates of my website [https://yashagarwal.in](https://yashagarwal.in) using GoDaddy and GitLab APIs.
 
+[![Build
+Status](https://travis-ci.org/yashhere/GoDaddy-GitLab-Certs.svg?branch=master)](https://travis-ci.org/yashhere/GoDaddy-GitLab-Certs)
+
 ## Usage Instructions
 
 First of all, set the four environmental variables `EMAIL_ID`, `GODADDY_KEY`, `GODADDY_SECRET` and `GITLAB_TOKEN` in your shell.
@@ -54,7 +57,7 @@ fi
 
 Domain registrars require some time to publish the changes in the DNS records. Here I have assumed 15 minutes in case of GoDaddy, and it works fine for me. Change the time limit according to your experience.
 
-Also update the `key_dir` vairable in the `certbot.sh` file to include your last domain name as explained above. So in the above case, key_dir variable will be -
+Also update the `key_dir` vairable in the `certbot.sh` file to include your last domain name as explained above. So in the above case, `key_dir` variable will be -
 
 ```bash
 key_dir="${DIR}/generated/config/live/readings.yashagarwal.in"
@@ -67,7 +70,9 @@ bash certbot.sh
 
 If everything works as expected, then you will see following message -
 ```text
-Congratulations! Your certificate and chain have been saved at: ...
+...
+Congratulations! Your certificate and chain have been saved at:
+...
 ```
 
 The script will automatically update your https certificate on the GitLab pages also. Your website will reflect the changes in some time.

@@ -17,4 +17,4 @@ before_script:
   - sudo apt-get install -y certbot
 
 script:
-  - travis_wait bash certbot.sh
+  - bash certbot.sh
