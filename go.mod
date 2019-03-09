@@ -1,3 +1,3 @@
-module github.com/yashhere/godaddyDNS
+module github.com/yashhere/GoDaddy-GitLab-Certs
 
 go 1.12
